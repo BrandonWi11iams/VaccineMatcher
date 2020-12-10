@@ -2,3 +2,15 @@ html {
     margin: 0; 
     padding: 0; 
 }
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkgrey;
+}
