@@ -12,23 +12,3 @@ h1 {
     margin: auto;
 }
 
-
-
-#grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 400px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    margin: auto;
-    padding: 10px;
-    background-color: darkgrey;
-}
-
-.square {
-    height: 4px;
-    width: 4px;
-    background-color: white;
-    margin: .5px;
-}
