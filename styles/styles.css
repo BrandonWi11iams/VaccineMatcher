@@ -32,3 +32,10 @@ h1 {
     background-color: rgb(255, 255, 255);
     margin: .5px;
 }
+.grid{
+    display: flex;
+    flex-wrap:wrap;
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
