@@ -23,7 +23,9 @@ h1 {
     margin: auto;
 }
 
-#grid{
+
+
+#grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,9 +37,16 @@ h1 {
     background-color: blueviolet;
 }
 
-.square{
+.square {
     height: 4px;
     width: 4px;
-    background-color:cyan;
+    background-color: rgb(255, 255, 255);
     margin: .5px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
 }
