@@ -1,9 +1,4 @@
-VacMat = {
-
-    init: function() {
-      let squares_container = document.getElementById("grid");
-    }
-  
-  }
-  
-  VacMat.init();
+document.addEventListener('DOMContentLoaded', () => {
+  const gridDisplay = document.querySelector('.grid')
+  const scoreDisplay = document.querySelector('score')
+})
