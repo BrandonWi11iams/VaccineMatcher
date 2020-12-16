@@ -1,5 +1,5 @@
 vacMatch = {
-  squares: null,
+  cells: null,
 
 
   init: function() {
