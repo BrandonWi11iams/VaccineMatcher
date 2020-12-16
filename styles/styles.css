@@ -3,10 +3,37 @@ html {
     padding: 0; 
 }
 
-.grid{
+body { 
+    font-family: sans-serif;
+    color: #333; 
+}
+
+h1 {
+    font-size: 1.2em;
+    margin: auto;
+}
+#Vac_Mat_app{
+    display:flex;
+    flex-direction:cloumn;
+    justify-content:center;
+    width: 400px;
+    border: 1px solid #111111;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+
+#grid{
     display: flex;
     flex-wrap: wrap;
     width: 400px;
     height: 400px;
     background-color: blueviolet;
+}
+
+.square{
+    height: 4px;
+    width: 4px;
+    background-color:cyan;
+    margin: .5px;
 }
