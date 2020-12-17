@@ -23,7 +23,9 @@ let VacMatApp = {
     chemDiv.className = "chemical"
     this.container.append(chemDiv)
     let chemical = {
-      color: "rgba(3,252,65)"
+      color: "rgba(3,252,65)",
+      element: persondiv,
+      
     }
     return chemical
   },
