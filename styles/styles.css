@@ -38,8 +38,8 @@ h1 {
 }
 
 .cells {
-    height: 4px;
-    width: 4px;
+    height: 100px;
+    width: 100px;
     background-color: lightseagreen;
     margin: .5px;
 }

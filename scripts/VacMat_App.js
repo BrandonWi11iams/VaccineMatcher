@@ -1,9 +1,9 @@
-vacMatch = {
+let vacMat = {
   cells: null,
 
 
-  init: function() {
-    let cells_container = document.getElementById("grid");{
+  init: function () {
+    let cells_container = document.getElementById("grid"); {
 
     }
     for (let i = 0; i < 16; i++) {
@@ -13,14 +13,12 @@ vacMatch = {
     }
     this.cells = cells_container.children;
 
-      
-    }
 
-    
+    for (let i = 0; i < this.squares.length; i++) { }
   }
 
 
-
+}
 vacMatch.init();
 
 
