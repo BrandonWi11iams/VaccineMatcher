@@ -29,7 +29,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 500px;
+    width: 600px;
     border: 1px solid #eee;
     border-radius: 10px;
     margin: auto;
@@ -38,8 +38,8 @@ h1 {
 }
 
 .cells {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     background-color: lightseagreen;
     margin: .5px;
 }
