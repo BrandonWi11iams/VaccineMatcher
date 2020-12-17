@@ -1,4 +1,5 @@
-let vacMat = {
+let VacMat = {
+  
   cells: null,
 
 
@@ -15,7 +16,7 @@ let vacMat = {
 
 
     for (let i = 0; i < this.squares.length; i++) { 
-      
+
     }
   }
 
