@@ -1,6 +1,7 @@
 let VacMatApp = {
 
   cells: null,
+  container: document.getElementById("grid"),
 
 
   init: function () {
@@ -15,7 +16,16 @@ let VacMatApp = {
     this.cells = cells_container.children;
 
     
-  }
+  },
+
+  createChem: function() {
+    let chemDiv= document.createElement("div") 
+    chemDiv.className = "chemical"
+    this.container.append(chemDiv)
+    let chemical = {
+      color: "rgba(3,252,65)"
+    }
+  },
 
 
 }
