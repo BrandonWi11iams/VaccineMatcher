@@ -15,6 +15,9 @@ let VacMatApp = {
     }
     this.cells = cells_container.children;
 
+    for (let i = 0; i < 2; i++) {
+    }
+
     
   },
 
