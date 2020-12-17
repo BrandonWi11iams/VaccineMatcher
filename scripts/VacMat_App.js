@@ -1,6 +1,6 @@
 let VacMatApp = {
 
-  cells: null,
+  cells: [],
   container: document.getElementById("grid"),
 
 
@@ -25,6 +25,7 @@ let VacMatApp = {
     let chemical = {
       color: "rgba(3,252,65)"
     }
+    return chemical
   },
 
 
