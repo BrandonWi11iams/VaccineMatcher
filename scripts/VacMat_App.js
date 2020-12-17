@@ -27,7 +27,7 @@ let VacMatApp = {
       element: persondiv,
       
     }
-    return chemical
+    return chemical;
   },
 
 
