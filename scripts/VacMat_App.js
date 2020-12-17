@@ -14,15 +14,12 @@ let VacMatApp = {
     }
     this.cells = cells_container.children;
 
-
-    for (let i = 0; i < this.squares.length; i++) { 
-
-    }
+    
   }
 
 
 }
-vacMatch.init();
+VacMatApp.init();
 
 
 
