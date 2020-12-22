@@ -1,11 +1,11 @@
 let VacMatApp = {
 
   cells: [],
-  container: document.getElementById("grid"),
+  container: document.getElementsByClassName("grid"),
 
 
   init: function () {
-    let cells_container = document.getElementById("grid"); {
+    let cells_container = document.getElementsByClassName("grid"); {
 
     }
     for (let i = 0; i < 16; i++) {
