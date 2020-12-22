@@ -36,7 +36,11 @@ let VacMatApp = {
   },
 
   renderchemical: function () {
-    for (let i = 0; i < this.chemical.length; i++) {
+    
+    for (let i = 0; i < this.chemicals.length; i++) {
+        let chemical = this.chemicals[i];
+    }
+    for (let i = 0; i < this.chemicals.length; i++) {
       this.chemical[i].element.style.top = this.chemical[i].y_pos + "px";
       this.chemical[i].element.style.left = this.chemical[i].x_pos + "px";
       this.chemical[i].element.style.backgroundColor = this.chemical[i].color;
