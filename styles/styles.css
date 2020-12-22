@@ -23,24 +23,29 @@ h1 {
     margin: auto;
 }
 
-#grid {
+.grid{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 600px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    margin: auto;
-    padding: 10px;
-    background-color: blueviolet;
-}
-
-.cells {
-    height: 125px;
-    width: 125px;
-    background-color: lightseagreen;
-    margin: .5px;
-}
+    width: 456px;
+    height: 456px;
+    background-color: #BBADA0;
+    border: 7px solid #BBADA0;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+  
+  .grid div {
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+    border-radius: 3px;
+    background-color: #EEE4DA;
+    color: #afa192;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1.6;
+  }
 
 .chem{
      height: 37.5;
