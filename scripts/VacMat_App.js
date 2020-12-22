@@ -35,24 +35,7 @@ let VacMatApp = {
     return chemical;
   },
 
-  renderchemical: function () {
-    
-    for (let i = 0; i < this.chemicals.length; i++) {
-        let chemical = this.chemicals[i];
-    }
-    for (let i = 0; i < this.chemicals.length; i++) {
-      this.chemical[i].element.style.top = this.chemical[i].y_pos + "px";
-      this.chemical[i].element.style.left = this.chemical[i].x_pos + "px";
-      this.chemical[i].element.style.backgroundColor = this.chemical[i].color;
-      this.chemical[i].element.style.height = this.chemical[i].radius * 2 + "px";
-      this.chemical[i].element.style.width = this.chemical[i].radius * 2 + "px";
-      if (this.chemical[i].distanced == false) {
-        this.chemical[i].x_pos = this.chemical[i].x_pos + this.chemical[i].x_velocity;
-        this.chemical[i].y_pos = this.chemical[i].y_pos + this.chemical[i].y_velocity;
-      }
-
-    }
-  },
+  
   
 
 
