@@ -23,8 +23,6 @@ h1 {
     margin: auto;
 }
 
-
-
 #grid {
     display: flex;
     flex-wrap: wrap;
@@ -42,4 +40,12 @@ h1 {
     width: 125px;
     background-color: lightseagreen;
     margin: .5px;
+}
+
+.chem{
+     height: 37.5;
+     width: 37.5;
+     background-color: brown;
+     margin: .5px
+
 }

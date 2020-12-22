@@ -34,6 +34,7 @@ let VacMatApp = {
     }
     return chemical;
   },
+
   renderchemical: function () {
     for (let i = 0; i < this.chemical.length; i++) {
       this.chemical[i].element.style.top = this.chemical[i].y_pos + "px";
@@ -47,7 +48,8 @@ let VacMatApp = {
       }
 
     }
-  }
+  },
+  
 
 
 }
