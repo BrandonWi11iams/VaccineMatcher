@@ -5,7 +5,5 @@ document.addEventListener('DOMContentLoaded', () =>  {
     let squares = []
     const width = 4
     let score = 0
-  cells: [],
-  container: document.getElementsByClassName("grid"),
-
-}
+  
+})
