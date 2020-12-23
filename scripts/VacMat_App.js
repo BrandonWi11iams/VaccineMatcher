@@ -1,47 +1,11 @@
-let VacMatApp = {
-
+document.addEventListener('DOMContentLoaded', () =>  {
+    const gridDisplay = document.querySelector('.grid')
+    const scoreDisplay = document.getElementById('score')
+    const resultDisplay = document.getElementById('result')
+    let squares = []
+    const width = 4
+    let score = 0
   cells: [],
   container: document.getElementsByClassName("grid"),
 
-
-  init: function () {
-    let cells_container = document.getElementsByClassName("grid"); {
-
-    }
-    for (let i = 0; i < 16; i++) {
-      let cells = document.createElement("div");
-      cells.className = "cells";
-      cells_container.appendChild(cells);
-    }
-    this.cells = cells_container.children;
-
-    for (let i = 0; i < 2; i++) {
-      this.chemical.push(this.createchem())
-    }
-    this.renderchemical();
-
-    
-  },
-
-  createChem: function() {
-    let chemDiv= document.createElement("div") 
-    chemDiv.className = "chemical"
-    this.container.append(chemDiv)
-    let chemical = {
-      color: "rgba(3,252,65)",
-      element: persondiv,
-      
-    }
-    return chemical;
-  },
-
-  
-  
-
-
 }
-VacMatApp.init();
-
-
-
-
