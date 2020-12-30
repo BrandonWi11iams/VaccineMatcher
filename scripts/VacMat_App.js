@@ -5,5 +5,17 @@ document.addEventListener('DOMContentLoaded', () =>  {
     let squares = []
     const width = 4
     let score = 0
+
+    function createBoard() {
+        for (let i=0; i < width*width; i++) {
+          square = document.createElement('div')
+          square.innerHTML = 0
+          gridDisplay.appendChild(square)
+          squares.push(square)
+        }
+        generate()
+        generate()
+      }
+      createBoard()
   
 })
