@@ -164,6 +164,59 @@ document.addEventListener('DOMContentLoaded', () => {
     generate()
   }
 
+  function combineRow() {
+    for (let i = 0; i < 15; i++) {
+      if (squares[i].innerHTML === squares[i + 1].innerHTML) {
+        let combinedTotal = parseInt(squares[i].innerHTML) + parseInt(squares[i + 1].innerHTML)
+        squares[i].innerHTML = combinedTotal
+        squares[i + 1].innerHTML = 0
+        score += combinedTotal
+        scoreDisplay.innerHTML = score
+      }
+    }
+    checkForWin()
+  }
+
+  function combineColumn() {
+    for (let i = 0; i < 12; i++) {
+      if (squares[i].innerHTML === squares[i + width].innerHTML) {
+        let combinedTotal = parseInt(squares[i].innerHTML) + parseInt(squares[i + width].innerHTML)
+        squares[i].innerHTML = combinedTotal
+        squares[i + width].innerHTML = 0
+        score += combinedTotal
+        scoreDisplay.innerHTML = score
+      }
+    }
+    checkForWin()
+  }
+  function checkForWin() {
+    for (let i = 0; i < squares.length; i++) {
+      if (squares[i].innerHTML == 2048) {
+        resultDisplay.innerHTML = 'You WIN'
+        document.removeEventListener('keyup', control)
+        setTimeout(() => clear(), 3000)
+      }
+    }
+  }
+
+  function checkForGameOver() {
+    let zeros = 0
+    for (let i = 0; i < squares.length; i++) {
+      if (squares[i].innerHTML == 0) {
+        zeros++
+      }
+    }
+    if (zeros === 0) {
+      resultDisplay.innerHTML = 'You LOSE'
+      document.removeEventListener('keyup', control)
+      setTimeout(() => clear(), 3000)
+    }
+  }
+
+  function clear() {
+    clearInterval(myTimer)
+  }
+
   function addColours() {
     for (let i = 0; i < squares.length; i++) {
       if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#3498eb'
