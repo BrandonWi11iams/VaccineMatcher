@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < width * width; i++) {
       square = document.createElement('div')
-      square.innerHTML = PH
+      square.innerHTML = 0
       gridDisplay.appendChild(square)
       squares.push(square)
     }
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function generate() {
     randomNumber = Math.floor(Math.random() * squares.length)
     if (squares[randomNumber].innerHTML == 0) {
-      squares[randomNumber].innerHTML = PH2
+      squares[randomNumber].innerHTML = 2
       checkForGameOver()
     } else generate()
   }
