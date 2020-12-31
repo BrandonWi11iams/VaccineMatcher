@@ -111,4 +111,56 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[i+(width*3)].innerHTML = newColumn[3]
     }
   }
+
+  function control(e) {
+    if(e.keyCode === 37) {
+      keyLeft()
+    } else if (e.keyCode === 38) {
+      keyUp()
+    } else if (e.keyCode === 39) {
+      keyRight()
+    } else if (e.keyCode === 40) {
+      keyDown()
+    }
+  }
+  function control(e) {
+    if(e.keyCode === 37) {
+      keyLeft()
+    } else if (e.keyCode === 38) {
+      keyUp()
+    } else if (e.keyCode === 39) {
+      keyRight()
+    } else if (e.keyCode === 40) {
+      keyDown()
+    }
+  }
+  document.addEventListener('keyup', control)
+
+  function keyRight() {
+    moveRight()
+    combineRow()
+    moveRight()
+    generate()
+  }
+
+  function keyLeft() {
+    moveLeft()
+    combineRow()
+    moveLeft()
+    generate()
+  }
+
+  function keyUp() {
+    moveUp()
+    combineColumn()
+    moveUp()
+    generate()
+  }
+
+  function keyDown() {
+    moveDown()
+    combineColumn()
+    moveDown()
+    generate()
+  }
 })
