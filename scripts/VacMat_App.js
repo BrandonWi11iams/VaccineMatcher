@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < width * width; i++) {
       square = document.createElement('div')
-      square.innerHTML = 0
+      square.innerHTML = "*"
       gridDisplay.appendChild(square)
       squares.push(square)
     }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function generate() {
     randomNumber = Math.floor(Math.random() * squares.length)
-    if (squares[randomNumber].innerHTML == 0) {
+    if (squares[randomNumber].innerHTML == "*") {
       squares[randomNumber].innerHTML = 2
       checkForGameOver()
     } else generate()
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   function checkForWin() {
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == 2048) {
+      if (squares[i].innerHTML == 512) {
         resultDisplay.innerHTML = 'You WIN'
         document.removeEventListener('keyup', control)
         setTimeout(() => clear(), 3000)
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         zeros++
       }
     }
-    if (zeros === 0) {
+    if (zeros === "*") {
       resultDisplay.innerHTML = 'You LOSE'
       document.removeEventListener('keyup', control)
       setTimeout(() => clear(), 3000)
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function addColours() {
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#3498eb'
+      if (squares[i].innerHTML == "*") squares[i].style.backgroundColor = '#3498eb'
       else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = '#eee4da'
       else if (squares[i].innerHTML == 4) squares[i].style.backgroundColor = '#ede0c8'
       else if (squares[i].innerHTML == 8) squares[i].style.backgroundColor = '#f2b179'
