@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (squares[i].innerHTML === squares[i + 1].innerHTML) {
         let combinedTotal = parseInt(squares[i].innerHTML) + parseInt(squares[i + 1].innerHTML)
         squares[i].innerHTML = combinedTotal
-        squares[i + 1].innerHTML = 0
+        squares[i + 1].innerHTML = "*"
         score += combinedTotal
         scoreDisplay.innerHTML = score
       }
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (squares[i].innerHTML === squares[i + width].innerHTML) {
         let combinedTotal = parseInt(squares[i].innerHTML) + parseInt(squares[i + width].innerHTML)
         squares[i].innerHTML = combinedTotal
-        squares[i + width].innerHTML = 0
+        squares[i + width].innerHTML = "*"
         score += combinedTotal
         scoreDisplay.innerHTML = score
       }
@@ -200,9 +200,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function checkForGameOver() {
-    let zeros = 0
+    let zeros = "*"
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == 0) {
+      if (squares[i].innerHTML == "*") {
         zeros++
       }
     }
