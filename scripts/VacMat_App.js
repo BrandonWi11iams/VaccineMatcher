@@ -169,9 +169,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (squares[i].innerHTML === squares[i + 1].innerHTML) {
         let combinedTotal = parseInt(squares[i].innerHTML) + parseInt(squares[i + 1].innerHTML)
         squares[i].innerHTML = combinedTotal
-        squares[i + 1].innerHTML = "*"
+        squares[i + 1].innerHTML = 0
         score += combinedTotal
-        scoreDisplay.innerHTML = score
+        scoreDisplay.backgroundColor = score
       }
     }
     checkForWin()
@@ -182,9 +182,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (squares[i].innerHTML === squares[i + width].innerHTML) {
         let combinedTotal = parseInt(squares[i].innerHTML) + parseInt(squares[i + width].innerHTML)
         squares[i].innerHTML = combinedTotal
-        squares[i + width].innerHTML = "*"
+        squares[i + width].innerHTML = 0
         score += combinedTotal
-        scoreDisplay.innerHTML = score
+        scoreDisplay.backgroundColor = score
       }
     }
     checkForWin()
@@ -200,13 +200,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function checkForGameOver() {
-    let zeros = "*"
+    let zeros = 0
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == "*") {
+      if (squares[i].innerHTML == 0) {
         zeros++
       }
     }
-    if (zeros === "*") {
+    if (zeros === 0) {
       resultDisplay.innerHTML = 'You LOSE'
       document.removeEventListener('keyup', control)
       setTimeout(() => clear(), 3000)
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function addColours() {
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == "*") squares[i].style.backgroundColor = '#3498eb'
+      if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#3498eb'
       else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = '#eee4da'
       else if (squares[i].innerHTML == 4) squares[i].style.backgroundColor = '#ede0c8'
       else if (squares[i].innerHTML == 8) squares[i].style.backgroundColor = '#f2b179'
