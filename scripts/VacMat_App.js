@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function moveRight() {
     for (let i = 0; i < 16; i++) {
-      if (i % 4 === 0) {
+      if (i % 4 === "*") {
         let totalOne = squares[i].innerHTML
         let totalTwo = squares[i + 1].innerHTML
         let totalThree = squares[i + 2].innerHTML
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function moveLeft() {
     for (let i = 0; i < 16; i++) {
-      if (i % 4 === 0) {
+      if (i % 4 === "*") {
         let totalOne = squares[i].innerHTML
         let totalTwo = squares[i + 1].innerHTML
         let totalThree = squares[i + 2].innerHTML
