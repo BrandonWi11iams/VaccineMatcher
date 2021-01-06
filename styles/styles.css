@@ -41,14 +41,6 @@ h1 {
     line-height: 1.6;
   }
 
-.chem{
-     height: 37.5;
-     width: 37.5;
-     background-color: brown;
-     margin: .5px
-
-}
-
 .score-container {
     text-align: center;
     width: 70px;
