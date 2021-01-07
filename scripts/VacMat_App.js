@@ -219,16 +219,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function addColours() {
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#32a8a6'
-      else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = '#3281a8'
-      else if (squares[i].innerHTML == 4) squares[i].style.backgroundColor = '#324ca8'
-      else if (squares[i].innerHTML == 8) squares[i].style.backgroundColor = '#7d32a8'
-      else if (squares[i].innerHTML == 16) squares[i].style.backgroundColor = '#7132a8'
-      else if (squares[i].innerHTML == 32) squares[i].style.backgroundColor = '#5132a8'
-      else if (squares[i].innerHTML == 64) squares[i].style.backgroundColor = '#ffab6e'
-      else if (squares[i].innerHTML == 128) squares[i].style.backgroundColor = '#fd9982'
-      else if (squares[i].innerHTML == 256) squares[i].style.backgroundColor = '#ead79c'
-      else if (squares[i].innerHTML == 512) squares[i].style.backgroundColor = '#76daff'
+      if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#03fc1c'
+      else if (squares[i].innerHTML == 1) squares[i].style.backgroundColor = '#03fc90'
+      else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = '#03fc9d'
+      else if (squares[i].innerHTML == 4) squares[i].style.backgroundColor = '#03fce3'
+      else if (squares[i].innerHTML == 8) squares[i].style.backgroundColor = '#03e7fc'
+      else if (squares[i].innerHTML == 16) squares[i].style.backgroundColor = '#03c6fc'
+      else if (squares[i].innerHTML == 32) squares[i].style.backgroundColor = '#0394fc'
+      else if (squares[i].innerHTML == 64) squares[i].style.backgroundColor = '#032cfc'
+      else if (squares[i].innerHTML == 128) squares[i].style.backgroundColor = '#9803fc'
+      else if (squares[i].innerHTML == 256) squares[i].style.backgroundColor = '#6703fc'
     }
   }
   addColours()
