@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function generate() {
     randomNumber = Math.floor(Math.random() * squares.length)
     if (squares[randomNumber].innerHTML == 0) {
-      squares[randomNumber].innerHTML = 2
+      squares[randomNumber].innerHTML = 1
       checkForGameOver()
     } else generate()
   }
