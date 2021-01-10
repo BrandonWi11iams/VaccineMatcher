@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function generate() {
     randomNumber = Math.floor(Math.random() * squares.length)
     if (squares[randomNumber].innerHTML == 0) {
-      squares[randomNumber].innerHTML = 2
+      squares[randomNumber].innerHTML = 1
       checkForGameOver()
     } else generate()
   }
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < squares.length; i++) {
       if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#ffffff'
       else if (squares[i].innerHTML == 1) squares[i].style.backgroundColor = '#03fc90'
-      else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = '#03fc9d'
+      else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = '#03fcc29d'
       else if (squares[i].innerHTML == 4) squares[i].style.backgroundColor = '#03fce3'
       else if (squares[i].innerHTML == 8) squares[i].style.backgroundColor = '#03e7fc'
       else if (squares[i].innerHTML == 16) squares[i].style.backgroundColor = '#03c6fc'
