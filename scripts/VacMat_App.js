@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
   function moveUp() {
     for (let i = 0; i < 4; i++) {
       let totalOne = squares[i].innerHTML
