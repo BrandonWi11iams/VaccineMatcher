@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       square.innerHTML = 0
       gridDisplay.appendChild(square)
       squares.push(square)
+
     }
     generate()
     generate()
@@ -223,4 +224,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   var myTimer = setInterval(addColours, 50)
 
+  
 })

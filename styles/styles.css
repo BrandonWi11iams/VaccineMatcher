@@ -41,7 +41,6 @@ h1 {
     line-height: 1.6;
   }
 
-
 .score-container {
     text-align: center;
     width: 70px;
@@ -57,4 +56,11 @@ h1 {
   
   .score-title {
     font-size: 16px;
+  }
+
+  .squarespic {
+    position: absolute;
+    top: -10;
+    left: -5;
+  
   }
