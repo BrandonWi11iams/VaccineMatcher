@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   function checkForWin() {
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == 2048) {
+      if (squares[i].innerHTML == 256) {
         resultDisplay.innerHTML = 'You WIN'
         document.removeEventListener('keyup', control)
         setTimeout(() => clear(), 3000)
