@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
   function moveUp() {
     for (let i = 0; i < 4; i++) {
       let totalOne = squares[i].innerHTML
@@ -112,17 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function control(e) {
-    if (e.keyCode === 37) {
-      keyLeft()
-    } else if (e.keyCode === 38) {
-      keyUp()
-    } else if (e.keyCode === 39) {
-      keyRight()
-    } else if (e.keyCode === 40) {
-      keyDown()
-    }
-  }
   function control(e) {
     if (e.keyCode === 37) {
       keyLeft()
@@ -219,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function addColours() {
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#03fc1c'
+      if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = '#ffffff'
       else if (squares[i].innerHTML == 1) squares[i].style.backgroundColor = '#03fc90'
       else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = '#03fcc29d'
       else if (squares[i].innerHTML == 4) squares[i].style.backgroundColor = '#03fce3'
