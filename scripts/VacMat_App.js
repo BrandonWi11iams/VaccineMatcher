@@ -224,5 +224,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   var myTimer = setInterval(addColours, 50)
 
+init: function () {
+  this.createFlask()
+
+  this.squares.pic = document.createElement("img");
+    this.squares.element.appendChild(this.squares.pic);
+    this.squares.pic.setAttribute("src", "images/flask.png");
+    this.squares.pic.setAttribute("height", "40");
+    this.squares.pic.setAttribute("width", "40");
+    this.squares.pic.className = "flaskPic"
   
 })
