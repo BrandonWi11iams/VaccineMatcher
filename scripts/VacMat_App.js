@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let squares = []
   const width = 4
   let score = 0
-
+//lines 8-30 were form this site,https://github.com/kubowania/2048
   function createBoard() {
     for (let i = 0; i < width * width; i++) {
       square = document.createElement('div')
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       checkForGameOver()
     } else generate()
   }
-
+//
   function moveRight() {
     for (let i = 0; i < 16; i++) {
       if (i % 4 === 0) {
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     moveDown()
     generate()
   }
-
+//155-205, https://github.com/kubowania/2048
   function combineRow() {
     for (let i = 0; i < 15; i++) {
       if (squares[i].innerHTML === squares[i + 1].innerHTML) {
@@ -178,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     checkForWin()
   }
+  
   function checkForWin() {
     for (let i = 0; i < squares.length; i++) {
       if (squares[i].innerHTML == 256) {
@@ -201,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => clear(), 3000)
     }
   }
-
+//
   function clear() {
     clearInterval(myTimer)
   }
