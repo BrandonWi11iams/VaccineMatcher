@@ -1,3 +1,4 @@
+////M.T
 document.addEventListener('DOMContentLoaded', () => {
   const gridDisplay = document.querySelector('.grid')
   const scoreDisplay = document.getElementById('score')
@@ -5,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let squares = []
   const width = 4
   let score = 0
+////
+
 //lines 8-30 were form this site,https://github.com/kubowania/2048
   function createBoard() {
     for (let i = 0; i < width * width; i++) {
@@ -28,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } else generate()
   }
 //
+
+////M.T
   function moveRight() {
     for (let i = 0; i < 16; i++) {
       if (i % 4 === 0) {
@@ -49,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-
+////
   function moveLeft() {
     for (let i = 0; i < 16; i++) {
       if (i % 4 === 0) {
@@ -123,6 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
       keyDown()
     }
   }
+  ////B.W
   document.addEventListener('keyup', control)
 
   function keyRight() {
@@ -152,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
     moveDown()
     generate()
   }
+////
+
 //155-205, https://github.com/kubowania/2048
   function combineRow() {
     for (let i = 0; i < 15; i++) {
@@ -178,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     checkForWin()
   }
-  
+  ///this was readjusted
   function checkForWin() {
     for (let i = 0; i < squares.length; i++) {
       if (squares[i].innerHTML == 256) {
@@ -188,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-
+///
   function checkForGameOver() {
     let zeros = 0
     for (let i = 0; i < squares.length; i++) {
@@ -203,6 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 //
+
+////B.W
   function clear() {
     clearInterval(myTimer)
   }
@@ -224,5 +234,5 @@ document.addEventListener('DOMContentLoaded', () => {
   addColours()
 
   var myTimer = setInterval(addColours, 50)
-
+////
 })
