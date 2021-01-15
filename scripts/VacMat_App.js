@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 //
 
-////M.T
+////M.T & B.W
   function moveRight() {
     for (let i = 0; i < 16; i++) {
       if (i % 4 === 0) {
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[i + (width * 3)].innerHTML = newColumn[3]
     }
   }
-
+////B.W
   function control(e) {
     if (e.keyCode === 37) {
       keyLeft()
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
       keyDown()
     }
   }
-  ////B.W
+  
   document.addEventListener('keyup', control)
 
   function keyRight() {
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 //
 
-////B.W
+////B.W & M.T
   function clear() {
     clearInterval(myTimer)
   }
