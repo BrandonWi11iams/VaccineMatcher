@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     checkForWin()
   }
-
+ 
   function combineColumn() {
     for (let i = 0; i < 12; i++) {
       if (squares[i].innerHTML === squares[i + width].innerHTML) {
